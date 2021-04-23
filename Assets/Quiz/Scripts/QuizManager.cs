@@ -7,7 +7,8 @@ public class QuizManager : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private QuizUI quizUI;
-    [SerializeField] private QuizDataScriptable quizData;
+    [SerializeField] private QuizDataScriptable[] quizData;
+    private int dataIndex;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject lives;
     [SerializeField] private GameObject timeObject;
@@ -20,15 +21,23 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
-        questions = quizData.questions;
+        questions = quizData[dataIndex].questions;
         UpdateScore();
         selectQuestion();
     }
     
-    public void NewGame()
+    public void NewGame(int ind)
     {
+        dataIndex = ind;
+        questions = quizData[dataIndex].questions;
+        selectQuestion();
         timeObject.GetComponent<Timer>().ResetTime();
         lives.GetComponent<Lives>().ResetLives();
+    }
+
+    public void SetIndex(int ind)
+    {
+        dataIndex = ind;
     }
 
     public void GameOver()

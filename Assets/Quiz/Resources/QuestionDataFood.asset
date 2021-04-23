@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51cde7322df0d664da6c347bdfe6b1bd, type: 3}
+  m_Name: QuestionDataFood
+  m_EditorClassIdentifier: 
+  questions:
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: 78c00d0d16c195341bb5067c7181f6a2, type: 3}
+    questionImg2: {fileID: 21300000, guid: cf5381996b9d36046b3859232be9b881, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Al-Harees
+    options:
+    - Correct
+    - Incorrect
+    correctAns: Correct
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: c9aacff118e13e94ea5144655f69fb5d, type: 3}
+    questionImg2: {fileID: 21300000, guid: 518a9a59a2228b54cb53883fd3cd25e3, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Chelo Kebab
+    options:
+    - Correct
+    - Incorrect
+    correctAns: Correct
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: ba57dc3aa57bf804ca53b890ba7eb8d8, type: 3}
+    questionImg2: {fileID: 21300000, guid: 92cb88e7438e46844a65e6d1969f7a03, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Falafel
+    options:
+    - Correct
+    - Incorrect
+    correctAns: Correct
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: 2e626b8d41ce6cc4da23522b7d8075ac, type: 3}
+    questionImg2: {fileID: 21300000, guid: 5628b239fcbc50143915b6ab492af4ce, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Fattoush
+    options:
+    - Correct
+    - Incorrect
+    correctAns: Correct
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: 98e03c4d0be372b43ba878a7dc71cd73, type: 3}
+    questionImg2: {fileID: 21300000, guid: d7fef0f2f1e648e4aa5bba267d3bf303, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Ghuzi
+    options:
+    - Correct
+    - Incorrect
+    correctAns: Correct
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: 3d07980663fb3e14f8216b8a2c1712af, type: 3}
+    questionImg2: {fileID: 21300000, guid: 305956648aaa21646a69ac2387a471e2, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Hummus
+    options:
+    - Incorrect
+    - Correct
+    correctAns: Correct
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: 8368984307f6a184abf6dd193394b6bf, type: 3}
+    questionImg2: {fileID: 21300000, guid: 48a4f9ce076d18242b6759efa83295a7, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Knafeh
+    options:
+    - Incorrect
+    - Correct
+    correctAns: Correct
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: d6644abd17d95fa4183f8c2dfec37dee, type: 3}
+    questionImg2: {fileID: 21300000, guid: 176c6858f50007346a776b571300fcae, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Shawarma
+    options:
+    - Incorrect
+    - Correct
+    correctAns: Correct
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: 49434712acade004fa85e17a5f876905, type: 3}
+    questionImg2: {fileID: 21300000, guid: b4dda0de9485fda44bbdb9b5e4a7cd18, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Stuffed Camel
+    options:
+    - Incorrect
+    - Correct
+    correctAns: Correct
+  - questionType: 1
+    questionImg: {fileID: 21300000, guid: fd0fb2d08f95b614595ad123f9941c6e, type: 3}
+    questionImg2: {fileID: 21300000, guid: 3c8ba3be3870bf943b3502a387b13e98, type: 3}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    questionInfo: Thareed
+    options:
+    - Incorrect
+    - Correct
+    correctAns: Correct
