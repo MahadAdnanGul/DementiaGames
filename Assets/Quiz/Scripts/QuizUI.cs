@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class QuizUI : MonoBehaviour
 {
     [SerializeField] private QuizManager quizManager;
-    [SerializeField] private Text questionText, scoreText, timerText;
+    [SerializeField] private TextMeshProUGUI questionText;
+    [SerializeField] private Text scoreText, timerText;
     [SerializeField] private List<Image> lifeImageList;
     [SerializeField] private GameObject gameOverPanel, mainMenuPanel, gameMenuPanel;
     [SerializeField] private Image questionImage;
+    [SerializeField] private Image questionImage2;
     [SerializeField] private UnityEngine.Video.VideoPlayer questionVideo;
     [SerializeField] private AudioSource questionAudio;
     [SerializeField] private List<Button> options;
@@ -31,10 +34,14 @@ public class QuizUI : MonoBehaviour
             Button localBtn = options[i];
             localBtn.onClick.AddListener(() => onClick(localBtn));
         }
-
         uiButton.onClick.AddListener(() => onClick(uiButton));
 
     }
+
+    //private void OnEnable()
+   // {
+    //    quizManager.NewGame();
+    //}
 
     public void setQuestion(Question question)
     {
@@ -48,6 +55,8 @@ public class QuizUI : MonoBehaviour
             ImageHolder();
             questionImage.transform.gameObject.SetActive(true);
             questionImage.sprite = question.questionImg;
+            questionImage2.transform.gameObject.SetActive(true);
+            questionImage2.sprite = question.questionImg2;
             break;
 
             case QuestionType.VIDEO:
@@ -66,10 +75,10 @@ public class QuizUI : MonoBehaviour
         }
 
         questionText.text = question.questionInfo;
-        List<string> answerList = ShuffleList.ShuffleListItems<string>(question.options);
+        List<string> answerList = question.options;
         for (int i = 0; i < options.Count; i++)
         {
-            options[i].GetComponentInChildren<Text>().text = answerList[i];
+            options[i].GetComponentInChildren<TextMeshProUGUI>().text = answerList[i];
             options[i].name = answerList[i];
             options[i].image.color = normalCol;
         }
