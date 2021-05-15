@@ -8,7 +8,7 @@ public class Lives : MonoBehaviour
     [SerializeField] private Image[] lives;
     [SerializeField] private Color normalCol;
     [SerializeField] private Color usedCol;
-    private int index;
+    public int index;
     // Start is called before the first frame update
     void Start()
     {
